@@ -1,64 +1,3 @@
-
-const countries = ['Finland', 'Sweden', 'Norway']
-
-
-
-const cars = new Set () ///// the set keyword is always capital
-console.log(cars)
-cars.add ( 'honda')
-cars.add ('audi')
-cars.add('bmw')
-cars.add('mazda')
-cars.add('mercedes')
-console.log(cars)
-
-///quesstion    2
- const nums =[0,1,2,3,4,5,6,7,8,9,10]
- const setOfNums = new Set()
- for(const num of nums){
-     setOfNums.add(nums)
- }
-console.log(setOfNums)
-
-//question 3
-
-console.log(cars.delete('audi')) //deleting an element from set 
-console.log(cars)
-
-//question 4
-
-cars.clear()
-console.log(cars)
-
-//question6
-
-const map = new Map()
-console.log(map)
-map.set('Finland','Helsinki')
-map.set('Sweden','Stockholme')
-map.set('Pakistan','Islamabad')
-map.set('india',' Delhi')
-map.set('Afghanistan','Kabul')
-map.set('Nepal','Khatmandu')
-console.log(map)
-
-
-/////level 2
-
-// q1
-const a = [4, 5, 8, 9]
-const b = [3, 4, 5, 7]
-const c = [...a,...b]
-let A = new Set(a)
-let B = new Set(b)
-let C =new Set (c)
-console.log(C)
-//q2 A intersection B
-let d =a.filter(num =>B.has(num))
-let D = new Set(d)
-console.log(D)
-//// level 3
-
 const countriesList = [
     {
       name: 'Afghanistan',
@@ -2072,11 +2011,3 @@ const countriesList = [
       currency: 'Botswana pula',
     },
   ];
-  console.log(typeof(countriesList))
-  const spokenLangs= (countries, count)=> {
-      const langArrays =countries.map(country => country.languages)
-      
-      
-  }
-  console.log(spokenLangs)
-  
