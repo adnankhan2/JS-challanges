@@ -118,5 +118,13 @@ const countryIndex = countries.findIndex(country =>country.length>=6)
 console.log(countryIndex)
 const countryNorway = countries.findIndex( country => country.includes('Norway'))// to find index of norway
 console.log(countryNorway)
-const countryRussia = countries.findIndex(country => country.includes('Russia'))
-console.log(countryRussia)
+const countryRussia = countries.findIndex(country => country.includes('Russia')) 
+console.log(countryRussia)// russia isnt in the array so it returns -1
+
+
+
+
+
+////level 2 
+const totalPrices = products.map(product => product.price).reduce((accum, curr) => accum +=curr )
+console.log(totalPrices) ////incomplete
